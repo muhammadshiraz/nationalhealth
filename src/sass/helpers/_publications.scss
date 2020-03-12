@@ -1,0 +1,80 @@
+.publications_page {
+    h2 {
+        color: $prussianblue;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .collection_counter {
+        min-height: 93px;
+        background: $poohbear;
+        display: table;
+        width: 100%;
+        border-radius: 50px;
+        -webkit-box-shadow: 1px 5px 10px 1px $minttulip;
+        box-shadow: 1px 5px 10px 1px $minttulip;
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 25px;
+        .container {
+            display: table-cell;
+            vertical-align: middle;
+            h4 {
+                margin-top: 10px;
+                margin-left: 28px;
+                color: $prussianblue;
+                font-size: 20px;
+            }
+            .counter {
+                text-align: center;
+                strong {
+                    font-size: 28px;
+                    color: $prussianblue;
+                    font-weight: 900;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+                span {
+                    display: block;
+                    font-size: 18px;
+                    color: $prussianblue;
+                }
+            }
+        }
+    }
+    .horizontal_box {
+        min-height: 178px;
+        background: $whiteclr;
+        box-shadow: 0px 2px 6px 9px $aliceblue;
+        border-radius: 25px;
+        padding: 22px 20px 5px 20px;
+        .horizontal_box_header {
+            border-bottom: 1px solid $cadetblue;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            h4 {
+                font-size: 18px;
+                color: $prussianblue;
+                font-weight: 600;
+            }
+        }
+        .horizontal_box_body {
+            p {
+                font-size: 18px;
+                margin-bottom: 18px;
+                color: $prussianblue;
+                span {
+                    font-size: 18px;
+                    color: $prussianblue;
+                }
+                a {
+                    display: inline-block;
+                    vertical-align: middle;
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

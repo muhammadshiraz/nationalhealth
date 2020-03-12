@@ -1,0 +1,336 @@
+/*###====================== 
+    Sass Variables 
+====================== ###*/
+/*### Primary Color Variables ###*/
+/*### Border Variables ###*/
+/*### Font Color Variables ###*/
+/*### Font Color Onhover Variables ###*/
+/*### Font Size Variables ###*/
+/*### Margin Variables ###*/
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 2rem;
+}
+
+/*### Padding Variables ###*/
+/*### Position Variables ###*/
+/*### Width Variables ###*/
+/*### Height Variables ###*/
+/*### Border Radius Variables ###*/
+/*### Vertical Align Variables ###*/
+/*### Sass Functions ###*/
+/*### Sass Mixins ###*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Bahnschrift Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bahnschrift Regular"), url("../fonts/bahnschrift-regular.woff") format("woff");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f3f8fc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #002857;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Bahnschrift Regular";
+}
+
+body {
+  padding-left: 17px;
+  margin-top: 5px;
+  background: #e5f0f7;
+}
+
+h2 {
+  font-family: "Bahnschrift Regular";
+}
+
+.bahnschriftregular {
+  font-family: "Bahnschrift Regular";
+}
+
+header {
+  height: 105px;
+  margin-bottom: 80px;
+}
+
+header nav {
+  padding-left: 30px !important;
+  padding-right: 60px !important;
+  font-family: "Bahnschrift Regular";
+  height: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 1px 10px 11px 1px #d5eaf7;
+          box-shadow: 1px 10px 11px 1px #d5eaf7;
+}
+
+header nav .navbar-brand {
+  margin-right: 2rem;
+}
+
+header nav .navbar-brand img {
+  width: 300px;
+}
+
+header nav .navbar-collapse#navbarSupportedContent {
+  display: inline-block !important;
+}
+
+header nav .navbar-collapse .navbar-nav .nav-item {
+  position: relative;
+  margin-right: 45px;
+  font-size: 16px;
+}
+
+header nav .navbar-collapse .navbar-nav .nav-item:last-child {
+  margin-right: 0;
+}
+
+header nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #002857 !important;
+  opacity: 1;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+header nav .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+  font-weight: 900;
+}
+
+header nav .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 3px solid #ade54c;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+}
+
+footer {
+  margin-top: 10rem;
+}
+
+footer .dailylife_banner_sec {
+  min-height: 190px;
+  border-bottom: 10px solid #ade54c;
+  background-image: url(../images/how-daily-life-changes-as-we-age.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  display: table;
+  width: 100%;
+  padding-bottom: 28px;
+}
+
+footer .dailylife_banner_sec .container-fluid {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+footer .dailylife_banner_sec .container-fluid h2 {
+  color: #e5f0f7;
+  font-size: 52px;
+}
+
+.contact_fixed_btn {
+  background: #ade54c;
+  top: 30%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  position: fixed;
+  right: 0px;
+}
+
+.contact_fixed_btn a {
+  color: #002857;
+  padding: 10px 25px;
+  display: block;
+  text-decoration: none;
+}
+
+.contact_fixed_btn a i {
+  vertical-align: middle;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#main_wrapper {
+  height: 100%;
+}
+
+.publications_page h2 {
+  color: #002857;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.publications_page .collection_counter {
+  min-height: 93px;
+  background: #a4e3ff;
+  display: table;
+  width: 100%;
+  border-radius: 50px;
+  -webkit-box-shadow: 1px 5px 10px 1px #cce6f6;
+  box-shadow: 1px 5px 10px 1px #cce6f6;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.publications_page .collection_counter .container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.publications_page .collection_counter .container h4 {
+  margin-top: 10px;
+  margin-left: 28px;
+  color: #002857;
+  font-size: 20px;
+}
+
+.publications_page .collection_counter .container .counter {
+  text-align: center;
+}
+
+.publications_page .collection_counter .container .counter strong {
+  font-size: 28px;
+  color: #002857;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.publications_page .collection_counter .container .counter span {
+  display: block;
+  font-size: 18px;
+  color: #002857;
+}
+
+.publications_page .horizontal_box {
+  min-height: 178px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 6px 9px #e5f0f7;
+          box-shadow: 0px 2px 6px 9px #e5f0f7;
+  border-radius: 25px;
+  padding: 22px 20px 5px 20px;
+}
+
+.publications_page .horizontal_box .horizontal_box_header {
+  border-bottom: 1px solid #b2bcc3;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.publications_page .horizontal_box .horizontal_box_header h4 {
+  font-size: 18px;
+  color: #002857;
+  font-weight: 600;
+}
+
+.publications_page .horizontal_box .horizontal_box_body p {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #002857;
+}
+
+.publications_page .horizontal_box .horizontal_box_body p span {
+  font-size: 18px;
+  color: #002857;
+}
+
+.publications_page .horizontal_box .horizontal_box_body p a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.publications_page .horizontal_box .horizontal_box_body p a i {
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */

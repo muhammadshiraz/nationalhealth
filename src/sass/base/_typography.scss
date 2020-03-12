@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Bahnschrift Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bahnschrift Regular'), url('../fonts/bahnschrift-regular.woff') format('woff');
+}
+// Font families
+$bahnschriftregular: 'Bahnschrift Regular';
+/* width */
+::-webkit-scrollbar {
+    width: 17px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: $cylindrical; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $prussianblue; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $davygrey; 
+}
+html,
+body {
+    height: $h-100;
+    font-family: $bahnschriftregular;
+}
+body {
+    padding-left: 17px;
+    margin-top: 5px;
+    background: $aliceblue;
+}
+h2 {
+    font-family: $bahnschriftregular;
+}
+.bahnschriftregular {
+    font-family: $bahnschriftregular;
+}

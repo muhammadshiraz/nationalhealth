@@ -1,0 +1,46 @@
+footer {
+    margin-top: $m10;
+    .dailylife_banner_sec {
+        min-height: 190px;
+        border-bottom: 10px solid $conifer;
+        background-image: url(../images/how-daily-life-changes-as-we-age.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        display: table;
+        width: 100%;
+        padding-bottom: 28px;
+        .container-fluid  {
+            display: table-cell;
+            vertical-align: bottom;
+            h2 {
+                color: $aliceblue;
+                font-size: 52px;
+            }
+        }
+    }
+}
+.contact_fixed_btn {
+    background: $conifer;
+    top: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform-origin: bottom right;
+    position: fixed;
+    right: 0px;
+    a {
+        color: $prussianblue;
+        padding: 10px 25px;
+        display: block;
+        text-decoration: none;
+        i {
+            vertical-align: middle;
+            font-size: 20px;
+            margin-left: 5px;
+        }        
+    }
+}

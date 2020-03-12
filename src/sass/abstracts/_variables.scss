@@ -1,0 +1,83 @@
+/*###====================== 
+    Sass Variables 
+====================== ###*/
+
+/*### Primary Color Variables ###*/
+$prussianblue: #002857;
+$davygrey: #555;
+$minttulip: #cce6f6;
+$poohbear: #a4e3ff;
+$aliceblue: #e5f0f7;
+$cadetblue: #b2bcc3;
+$whiteclr: #ffffff;
+$conifer: #ade54c;
+$cylindrical: #f3f8fc;
+
+/*### Border Variables ###*/
+$bdr1-grey: solid 1px #888888;
+
+$bg-w-smoke: #f5f5f5; 
+
+/*### Font Color Variables ###*/
+$gray20: #333333;
+
+/*### Font Color Onhover Variables ###*/
+$persianblue: #0033dd;
+
+/*### Font Size Variables ###*/
+$f14: 14px;
+$f18: 18px;
+$f22: 22px;
+
+/*### Margin Variables ###*/
+$m1: 1rem;
+$m2: 2rem;
+$m3: 2rem;
+$m5: 5rem;
+$m10: 10rem;
+$m-b23: 23px;
+$m-b10: 10px;
+.mt-5 {
+    margin-top: $m5;
+}
+.mb-1 {
+    margin-bottom: $m1;
+}
+.mb-2 {
+    margin-bottom: $m2;
+}
+.mb-3 {
+    margin-bottom: $m3;
+}
+/*### Padding Variables ###*/
+$p-10-38: 10px 0 10px 38px;
+$p-t-30: 30px;
+$p-b-30: 30px;
+$p-b-10: 10px;
+$p-l-30: 30px;
+$p-r-30: 30px;
+
+/*### Position Variables ###*/
+$po-r: relative;
+$po-ab: absolute;
+
+/*### Width Variables ###*/
+$w-225: 225px;
+$w-21: 21px;
+$w-100: 100%;
+$w-250: 250px;
+$w-35: 35px;
+$w-265: 265px;
+$w-45: 45px;
+
+/*### Height Variables ###*/
+$h-48: 48px;
+$h-36: 36px;
+$h-100: 100%;
+
+/*### Border Radius Variables ###*/
+$b-r-5: 5px;
+$b-r-5-5: 0 5px 5px 0;
+
+/*### Vertical Align Variables ###*/
+$v-m: middle;
