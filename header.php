@@ -12,7 +12,8 @@
 <!-- Bootstrap JS -->
 <script src="plugins/bootstrap-4.4.1/js/bootstrap.min.js"></script>
 <!-- Font Awesome CSS -->
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" />
 <!-- Material Icon -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Animate On Scroll Library CSS -->
@@ -34,7 +35,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav pull-right">
+            <ul class="navbar-nav float-right">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>

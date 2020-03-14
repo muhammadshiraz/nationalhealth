@@ -293,6 +293,466 @@ footer .dailylife_banner_sec .container-fluid h2 {
   color: #002857;
 }
 
+.publications_page .filter_sec {
+  background: #ffffff;
+  padding: 18px 20px;
+  min-height: 100%;
+  -webkit-box-shadow: -2px 3px 19px 11px #cce6f6;
+          box-shadow: -2px 3px 19px 11px #cce6f6;
+}
+
+.publications_page .filter_sec form .form-group .form-control:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.publications_page .filter_sec form .form-group .find_input {
+  position: relative;
+  border-bottom: 1px solid #7f93ab;
+}
+
+.publications_page .filter_sec form .form-group .find_input .fa-binoculars {
+  position: absolute;
+  color: #1798e0;
+  bottom: 10px;
+  font-size: 18px;
+}
+
+.publications_page .filter_sec form .form-group .find_input #findinputID {
+  border: 0;
+  border-radius: 0;
+  padding: 0 28px;
+  color: #111111;
+}
+
+.publications_page .filter_sec form .form-group .find_input #findinputID::-webkit-input-placeholder {
+  color: #111111;
+}
+
+.publications_page .filter_sec form .form-group .find_input #findinputID:-ms-input-placeholder {
+  color: #111111;
+}
+
+.publications_page .filter_sec form .form-group .find_input #findinputID::-ms-input-placeholder {
+  color: #111111;
+}
+
+.publications_page .filter_sec form .form-group .find_input #findinputID::placeholder {
+  color: #111111;
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes {
+  display: block;
+  float: right;
+  height: 100%;
+  /* The checkbox container */
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: normal;
+  margin-top: 10px;
+  float: left;
+  border-right: 1px solid #333333;
+  padding-right: 15px;
+  margin-right: 15px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container:last-child {
+  border-right: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container input:checked ~ .checkmark {
+  background-color: #2377b5;
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: solid 1px #1767a8;
+  /* Create the checkmark/indicator (hidden when not checked) */
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.publications_page .filter_sec form .form-group .find_input .custom_checkboxes .checkbox_container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.publications_page .filter_sec form .form-group .years_list {
+  margin-top: 15px;
+}
+
+.publications_page .filter_sec form .form-group .years_list li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.publications_page .filter_sec form .form-group .years_list li a {
+  color: #085da3;
+  text-decoration: none;
+}
+
+.publications_page .filter_sec form .form-group .author_name {
+  margin-top: 15px;
+}
+
+.publications_page .filter_sec form .form-group .author_name li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.publications_page .filter_sec form .form-group .author_name li a {
+  color: #085da3;
+  text-decoration: none;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #4585ba;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher {
+  position: relative;
+  width: 100%;
+  height: 33px;
+  border-radius: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 100%;
+  height: 32px;
+  border-radius: 0;
+  background-color: #1E1E1E;
+  outline: none;
+  cursor: pointer;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher input:before, .publications_page .filter_sec form .form-group .switcher_btn span.switcher input:after {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FFFFFF;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher input:before {
+  content: 'AND';
+  left: 14px;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher input:after {
+  content: 'OR';
+  right: 18px;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher label {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 0;
+  height: 100%;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher label.deactivate {
+  background: #b8b8b8 !important;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input {
+  -webkit-transition: .25s -.1s;
+  transition: .25s -.1s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:checked {
+  background-color: #FFFFFF;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:checked:before {
+  color: #FFFFFF;
+  -webkit-transition: color .5s .2s;
+  transition: color .5s .2s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:checked:after {
+  color: #1868a9;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:checked + label {
+  left: 0;
+  right: 60px;
+  background: #085da3;
+  -webkit-transition: left .5s, right .4s .2s;
+  transition: left .5s, right .4s .2s;
+  width: 60px;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:not(:checked) {
+  background: #ffffff;
+  -webkit-transition: background .5s -.1s;
+  transition: background .5s -.1s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:not(:checked):before {
+  color: #085da3;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:not(:checked):after {
+  color: #ffffff;
+  -webkit-transition: color .5s .2s;
+  transition: color .5s .2s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-1 input:not(:checked) + label {
+  left: 60px;
+  right: 0;
+  background: #085da3;
+  -webkit-transition: left .4s .2s, right .5s, background .35s -.1s;
+  transition: left .4s .2s, right .5s, background .35s -.1s;
+  width: 57px;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 {
+  overflow: hidden;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input {
+  -webkit-transition: background-color 0s .5s;
+  transition: background-color 0s .5s;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input:before {
+  color: #1E1E1E;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input:after {
+  color: #FFFFFF;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input:checked {
+  background-color: #FFFFFF;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input:checked + label {
+  background: #FFFFFF;
+  -webkit-animation: turn-on .5s ease-out;
+          animation: turn-on .5s ease-out;
+}
+
+@-webkit-keyframes turn-on {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes turn-on {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input:not(:checked) {
+  background: #1E1E1E;
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 input:not(:checked) + label {
+  background: #1E1E1E;
+  -webkit-animation: turn-off .5s ease-out;
+          animation: turn-off .5s ease-out;
+}
+
+@-webkit-keyframes turn-off {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@keyframes turn-off {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+.publications_page .filter_sec form .form-group .switcher_btn span.switcher.switcher-2 label {
+  top: 0px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.publications_page .filter_sec form .form-group .eyeview_btn {
+  display: table;
+  overflow: hidden;
+  background: #d2f1ff;
+  border-radius: 100px;
+  min-height: 40px;
+  width: 100%;
+  padding: 0 12px 0 12px;
+}
+
+.publications_page .filter_sec form .form-group .eyeview_btn.deactivate {
+  background: #ebebeb;
+}
+
+.publications_page .filter_sec form .form-group .eyeview_btn span {
+  color: #002857;
+  vertical-align: middle;
+  display: table-cell;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.publications_page .filter_sec form .form-group .eyeview_btn span i {
+  vertical-align: middle;
+  float: right;
+  color: #085da3;
+}
+
+.publications_page .filter_sec form .result_btn {
+  margin: 0 auto;
+  border: 0;
+  background: transparent;
+  color: #085da3;
+  text-decoration: none;
+  display: block;
+  margin-top: 18px;
+  font-weight: normal;
+}
+
+.publications_page .filter_sec form .apply_btn {
+  margin: 0 auto;
+  border: 0;
+  color: #002857;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  background: #8fddff;
+  min-width: 150px;
+  border-radius: 50px;
+  padding: 10px 0;
+  margin-top: 25px;
+}
+
+.publications_page .filter_sec form .clear_btn {
+  border: 0;
+  background: transparent;
+  color: #085da3;
+  text-decoration: none;
+  display: block;
+  margin-top: 0;
+  font-weight: normal;
+  float: right;
+  line-height: normal;
+}
+
+.publications_page .filter_sec form .clear_btn i {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #085da3;
+}
+
+.publications_page .filter_sec form :focus {
+  outline: 0;
+}
+
+.publications_page .filter_sec .add_btn .plus_btn {
+  background: #b3b3b3;
+  border: 0;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+}
+
+.publications_page .filter_sec .add_btn .plus_btn:focus {
+  outline: 0;
+}
+
+.publications_page .filter_sec .add_btn .plus_btn:hover {
+  background: #085da3;
+}
+
+.publications_page .filter_sec .add_btn .plus_btn i {
+  vertical-align: middle;
+  color: #e6e6e6;
+  font-weight: 900;
+  font-size: 32px;
+}
+
 .publications_page .horizontal_box {
   min-height: 178px;
   background: #ffffff;

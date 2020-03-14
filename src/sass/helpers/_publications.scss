@@ -1,7 +1,7 @@
 .publications_page {
     h2 {
         color: $prussianblue;
-        font-size: 36px;
+        font-size: $f36;
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -23,12 +23,12 @@
                 margin-top: 10px;
                 margin-left: 28px;
                 color: $prussianblue;
-                font-size: 20px;
+                font-size: $f20;
             }
             .counter {
                 text-align: center;
                 strong {
-                    font-size: 28px;
+                    font-size: $f28;
                     color: $prussianblue;
                     font-weight: 900;
                     margin-bottom: 10px;
@@ -36,10 +36,383 @@
                 }
                 span {
                     display: block;
-                    font-size: 18px;
+                    font-size: $f18;
                     color: $prussianblue;
                 }
             }
+        }
+    }
+    .filter_sec {
+        background: $whiteclr;
+        padding: 18px 20px;
+        min-height: 100%;
+        box-shadow: -2px 3px 19px 11px $minttulip;
+        form {
+            .form-group {
+                .form-control {
+                    &:focus {                
+                        outline: 0;
+                        box-shadow: none;
+                    }
+                }
+                .find_input {
+                    position: relative;
+                    border-bottom: 1px solid $shadowblue;
+                    .fa-binoculars {
+                        position: absolute;
+                        color: $cerulean;
+                        bottom: 10px;
+                        font-size: $f18;
+                    }
+                    #findinputID {
+                        border: 0;
+                        border-radius: 0;
+                        padding: 0 28px;
+                        color: $black;
+                        &::placeholder {
+                            color: $black;
+                        }
+                    }
+                    .custom_checkboxes {
+                        display: block;
+                        float: right;
+                        height: 100%;
+                    /* The checkbox container */
+                        .checkbox_container {
+                            display: block;
+                            position: relative;
+                            padding-left: 25px;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            line-height: normal;
+                            margin-top: 10px;
+                            float: left;
+                            border-right: 1px solid $gray20;
+                            padding-right: 15px;
+                            margin-right: 15px;
+                            &:last-child {
+                                border-right: 0;
+                                margin-right: 0;
+                                padding-right: 0;
+                            }
+                            /* Hide the browser's default checkbox */
+                            input {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                                &:checked ~ .checkmark {
+                                    background-color: $denim;
+                                }
+                                &:checked ~ .checkmark:after {
+                                    display: block;
+                                }
+                            }
+                            /* Create a custom checkbox */
+                            .checkmark {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 18px;
+                                width: 18px;
+                                background-color: transparent;
+                                border: solid 1px $funblue;
+                                /* Create the checkmark/indicator (hidden when not checked) */
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                }
+                                &:after {
+                                    left: 5px;
+                                    top: 2px;
+                                    width: 5px;
+                                    height: 10px;
+                                    border: solid white;
+                                    border-width: 0 2px 2px 0;
+                                    -webkit-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                }
+                            }                                                 
+                        }
+                    }               
+                }
+                .years_list {
+                    margin-top: 15px;
+                    li {
+                        display: inline-block;
+                        margin-right: 35px;
+                        a {
+                            color: $bahamablue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                .author_name {
+                    margin-top: 15px;
+                    li {
+                        display: inline-block;
+                        margin-right: 5px;
+                        a {
+                            color: $bahamablue;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                $black:#1E1E1E;
+                $grey:#CCCCCC;
+                $white:#FFFFFF;
+                .switcher_btn {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    border: 1px solid #4585ba;  
+                    span.switcher {                        
+                        position: relative;
+                        width: 100%;
+                        height: 33px;
+                        border-radius: 0;
+                        margin: 0;
+                        cursor: pointer;
+                        input {
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            position: relative;
+                            width: 100%;
+                            height: 32px;
+                            border-radius: 0;
+                            background-color: #1E1E1E;
+                            outline: none;
+                            cursor: pointer;
+                            &:before, &:after {
+                                z-index:2;
+                                position: absolute;
+                                top:50%;
+                                transform:translateY(-50%);
+                                color:$white;
+                            }
+                            &:before {
+                                content: 'AND';
+                                left:14px;
+                            }
+                            &:after {
+                                content: 'OR';
+                                right:18px;
+                            }
+                        }
+                        label {
+                            z-index: 1;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            border-radius: 0;
+                            height: 100%;
+                            &.deactivate {
+                                background: #b8b8b8 !important;
+                            }
+                        }
+                        &.switcher-1 {
+                            input {
+                                transition:.25s -.1s;
+                                &:checked {
+                                    background-color:$white;
+                                &:before {
+                                    color:$white;
+                                    transition: color .5s .2s;
+                                }
+                                &:after {
+                                    color:#1868a9;
+                                    transition: color .5s;
+                                }
+                                    &+label {
+                                        left: 0;
+                                        right: 60px;
+                                        background: $bahamablue;
+                                        -webkit-transition: left .5s, right .4s .2s;
+                                        transition: left .5s, right .4s .2s;
+                                        width: 60px;
+                                    }
+                                }
+                                &:not(:checked) {
+                                background:$whiteclr;
+                                transition: background .5s -.1s;
+                                &:before {
+                                    color:$bahamablue;
+                                    transition: color .5s;
+                                }
+                                &:after {
+                                    color:$whiteclr;
+                                    transition: color .5s .2s;
+                                }
+                                    &+label {
+                                        left: 60px;
+                                        right: 0;
+                                        background: $bahamablue;
+                                        -webkit-transition: left .4s .2s, right .5s, background .35s -.1s;
+                                        transition: left .4s .2s, right .5s, background .35s -.1s;
+                                        width: 57px;
+                                    }
+                                }
+                            }
+                        }
+                        &.switcher-2 {
+                            overflow:hidden;
+                            input {                                
+                                transition:background-color 0s .5s;
+                                &:before {
+                                    color:$black;
+                                }
+                                &:after {
+                                    color:$white;
+                                }
+                                &:checked {
+                                background-color:$white;
+                                    &+label {
+                                        background:$white;
+                                        
+                                        animation: turn-on .5s ease-out;
+                                        
+                                        @keyframes turn-on {
+                                            0% {
+                                                left:100%;
+                                            }
+                                            100% {
+                                                left:0%;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:not(:checked) {
+                                background:$black;
+                                    &+label {
+                                        background:$black;
+                                        
+                                        animation: turn-off .5s ease-out;
+                                        
+                                        @keyframes turn-off {
+                                            0% {
+                                                right:100%;
+                                            }
+                                            100% {
+                                                right:0%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            label {
+                                top:0px;                                
+                                width:200px;
+                                height:50px;
+                                border-radius:25px;
+                            }
+                        }
+                    }
+                }
+                .eyeview_btn {
+                    display: table;
+                    overflow: hidden;
+                    background: #d2f1ff;
+                    border-radius: 100px;
+                    min-height: 40px;
+                    width: 100%;
+                    padding: 0 12px 0 12px;
+                    &.deactivate {
+                        background: #ebebeb;
+                    }
+                    span {
+                        color: $prussianblue;
+                        vertical-align: middle;
+                        display: table-cell;
+                        text-decoration: none;
+                        cursor: pointer;
+                        i {
+                            vertical-align: middle;
+                            float: right;
+                            color: $bahamablue;
+                        }
+                    }                    
+                }
+            }
+            .result_btn {
+                margin: 0 auto;
+                border: 0;
+                background: transparent;
+                color: $bahamablue;
+                text-decoration: none;
+                display: block;
+                margin-top: 18px;
+                font-weight: normal;
+            }
+            .apply_btn {
+                margin: 0 auto;
+                border: 0;
+                color: $prussianblue;
+                text-decoration: none;
+                display: block;
+                font-weight: normal;
+                background: $palemagenta;
+                min-width: 150px;
+                border-radius: 50px;
+                padding: 10px 0;
+                margin-top: 25px;
+            }
+            .clear_btn {
+                border: 0;
+                background: transparent;
+                color: $bahamablue;
+                text-decoration: none;
+                display: block;
+                margin-top: 0;
+                font-weight: normal;
+                float: right;
+                line-height: normal;
+                i {
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    color: $bahamablue;
+                }
+            }
+            :focus {
+                outline: 0;
+            }
+        }
+        .add_btn {
+            .plus_btn {
+                background: $pinkswan;
+                border: 0;
+                border-radius: 50px;
+                width: 45px;
+                height: 45px;
+                &:focus {
+                    outline: 0;
+                }
+                &:hover {
+                    background: $bahamablue;
+                }
+                i {
+                    vertical-align: middle;
+                    color: $whisper;
+                    font-weight: 900;
+                    font-size: $f32;
+                }
+            }        
         }
     }
     .horizontal_box {
@@ -53,25 +426,25 @@
             padding-bottom: 8px;
             margin-bottom: 8px;
             h4 {
-                font-size: 18px;
+                font-size: $f18;
                 color: $prussianblue;
                 font-weight: 600;
             }
         }
         .horizontal_box_body {
             p {
-                font-size: 18px;
+                font-size: $f18;
                 margin-bottom: 18px;
                 color: $prussianblue;
                 span {
-                    font-size: 18px;
+                    font-size: $f18;
                     color: $prussianblue;
                 }
                 a {
                     display: inline-block;
                     vertical-align: middle;
                     i {
-                        font-size: 18px;
+                        font-size: $f18;
                     }
                 }
             }
