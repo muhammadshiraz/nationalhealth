@@ -395,11 +395,14 @@
         }
         .add_btn {
             .plus_btn {
-                background: $pinkswan;
+                background: #b3b3b3;
                 border: 0;
                 border-radius: 50px;
                 width: 45px;
                 height: 45px;
+                display: table;
+                text-align: center;
+                cursor: pointer;
                 &:focus {
                     outline: 0;
                 }
@@ -408,9 +411,10 @@
                 }
                 i {
                     vertical-align: middle;
-                    color: $whisper;
+                    color: #e6e6e6;
                     font-weight: 900;
                     font-size: $f32;
+                    display: table-cell;
                 }
             }        
         }

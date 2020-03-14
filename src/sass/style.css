@@ -736,6 +736,9 @@ footer .dailylife_banner_sec .container-fluid h2 {
   border-radius: 50px;
   width: 45px;
   height: 45px;
+  display: table;
+  text-align: center;
+  cursor: pointer;
 }
 
 .publications_page .filter_sec .add_btn .plus_btn:focus {
@@ -751,6 +754,7 @@ footer .dailylife_banner_sec .container-fluid h2 {
   color: #e6e6e6;
   font-weight: 900;
   font-size: 32px;
+  display: table-cell;
 }
 
 .publications_page .horizontal_box {

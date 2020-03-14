@@ -37,7 +37,7 @@
                         <div class="col-2">
                             <div class="form-group">
                                 <div class="add_btn">
-                                    <button class="plus_btn"><i class="material-icons">add</i></button>
+                                    <span class="plus_btn"><i class="material-icons">add</i></span>
                                 </div>
                             </div>
                         </div>
